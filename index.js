@@ -1,6 +1,6 @@
 do {
     arrayLength = parseInt(prompt('Enter array`s length please?'));
-} while (isNaN(arrayLength));
+} while (isNaN(arrayLength) || arrayLength <=0);
 
 arrayWithValuesFromUser = [];
 
