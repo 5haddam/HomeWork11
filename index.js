@@ -1,6 +1,6 @@
 do {
-    arrayLength = parseInt(prompt('Enter array`s length please?').trim());
-} while (!arrayLength || isNaN(arrayLength));
+    arrayLength = parseInt(prompt('Enter array`s length please?'));
+} while (isNaN(arrayLength));
 
 arrayWithValuesFromUser = [];
 
