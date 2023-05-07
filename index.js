@@ -15,7 +15,17 @@ console.log(arrayWithValuesFromUser);
 
 // 2
 
-console.log(arrayWithValuesFromUser.sort());
+for (i = 0; i < arrayWithValuesFromUser.length; i++) {
+    for (j = 0; j < arrayWithValuesFromUser.length - i - 1; j++) {
+        if (arrayWithValuesFromUser[j] > arrayWithValuesFromUser[j + 1]) {
+            valueWithIndexPlusOne = arrayWithValuesFromUser[j];
+            arrayWithValuesFromUser[j] = arrayWithValuesFromUser[j + 1];
+            arrayWithValuesFromUser[j + 1] = valueWithIndexPlusOne;
+        }
+    }
+}
+
+console.log(arrayWithValuesFromUser);
 
 // 3
 
